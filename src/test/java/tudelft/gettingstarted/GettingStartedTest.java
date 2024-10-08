@@ -1,5 +1,5 @@
 package tudelft.gettingstarted;
-
+//      modify by EJC
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,15 +13,15 @@ public class GettingStartedTest {
 
 //    UNCOMMENT THE CODE BELOW, AND FILL THE GAPS!
 
-//    @Test
-//    public void addFiveToZero() {
-//        int result = new GettingStarted().addFive(???);
-//        Assertions.assertEquals(???, result);
-//    }
-//
-//    @Test
-//    public void addFiveToMinus20() {
-//        int result = new GettingStarted().addFive(???);
-//        Assertions.assertEquals(????,result);
-//    }
+    @Test
+    public void addFiveToZero() {
+        int result = new GettingStarted().addFive(-15);
+        Assertions.assertEquals(-10, result);
+    }
+
+    @Test
+    public void addFiveToMinus20() {
+        int result = new GettingStarted().addFive(-25);
+        Assertions.assertEquals(-20,result);
+    }
 }
